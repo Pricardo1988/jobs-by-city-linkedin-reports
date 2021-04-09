@@ -1,1 +1,58 @@
-# linkedin-jobs-by-city-reports-automation
+# Jobs By City LinkedIn Reports
+
+Jobs By City LinkedIn Reports automation using [Github Actions](https://github.com/features/actions) and [Ritchie CLI](https://ritchiecli.io).
+
+
+## 📝 Description
+
+This automation uses this [Ritchie CLI formula](https://github.com/GuillaumeFalourd/formulas-insights/tree/master/linkedin/search/jobs) to scrape public LinkedIn pages to find jobs by city and to generate a CSV report with all relevant jobs datas.
+
+## Sample of generated reports
+
+Reports will look like this one:
+
+![Sample](/docs/report-sample.png)
+
+## ♻️ Want to automate your login as well?
+
+**Create a new repository** (you can clone or fork this one)
+
+```bash
+git clone https://github.com/GuillaumeFalourd/linkedin-jobs-by-city-reports-automation.git
+```
+
+Then, you have 2 options:
+
+### Option 1 - Without email notification
+
+- On the file [(1-jobs-by-city.yml)](todo), add 2 environment variables:
+  - `RIT_JOB_TITLE` with the JOB TITLE you're looking for.
+  - `RIT_JOB_CITY` with the JOB CITY you're interested in.
+
+In that case, you'll only see new reports generated on the repository `/reports` directory.
+
+### Option 2 - With email notification
+
+You'll need to use **[SendGrid](https://sendgrid.com/)** (it's **FREE** until 100 emails sent / day).
+
+- As for the option 1: on the file [(1-jobs-by-city.yml)](todo), add 2 environment variables:
+  - `RIT_JOB_TITLE` with the JOB TITLE you're looking for.
+  - `RIT_JOB_CITY` with the JOB CITY you're interested in.
+
+- Add 3 secrets on the new repository ([here is a reference](https://docs.github.com/en/actions/reference/encrypted-secrets)):
+  - a secret `RIT_EMAIL_RECEIVER`  with your stackoverflow account username.
+  - a secret `RIT_SENDGRID_API_KEY` with your sendgrid API Key.
+  - a secret `RIT_SENDGRID_EMAIL_SENDER` with yoru sendgrid email sender address.
+
+In that case, you'll not only see new reports generated on the repository `/reports` directory, but you'll be notified by mail receiving a notification each time the workflow will be triggered (*note that the SENDGRIG free limit is 100 emails / day*)
+
+*Note: [You can also use Ritchie CLI to add new secrets to your repository](https://github.com/GuillaumeFalourd/formulas-github/tree/master/github/add/secret)*
+
+## 🔐 Secrets
+
+TODO
+
+
+## 🔁 Workflow Demo
+
+TODO
