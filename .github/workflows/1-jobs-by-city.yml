@@ -29,10 +29,8 @@ jobs:
             RIT_JOB_CITY: "Uberlandia"
         run: |
             cd $GITHUB_WORKSPACE/reports
-            echo $RIT_JOB_TITLE
-            echo $RIT_JOB_CITY
             sudo rit add repo --provider="Github" --name="formulas-insights" --repoUrl="https://github.com/GuillaumeFalourd/formulas-insights" --priority=1
-            sudo rit linkedin search jobs --rit_job_title= "${RIT_JOB_TITLE}" --rit_job_city="{RIT_JOB_CITY}" --rit_send_email="no"
+            sudo rit linkedin search jobs --rit_job_title=$RIT_JOB_TITLE --rit_job_city=$RIT_JOB_CITY --rit_send_email="no"
 
       - name: Commit and Push new file
         run: |
