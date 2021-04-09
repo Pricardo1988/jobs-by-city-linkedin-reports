@@ -1,5 +1,11 @@
 # Jobs By City LinkedIn Reports
 
+[![Jobs By City](https://github.com/GuillaumeFalourd/jobs-by-city-linkedin-reports/actions/workflows/1-jobs-by-city.yml/badge.svg)](https://github.com/GuillaumeFalourd/jobs-by-city-linkedin-reports/actions/workflows/1-jobs-by-city.yml)
+
+[![Jobs By City (EMAIL)](https://github.com/GuillaumeFalourd/jobs-by-city-linkedin-reports/actions/workflows/2-jobs-by-city-sendgrid.yml/badge.svg)](https://github.com/GuillaumeFalourd/jobs-by-city-linkedin-reports/actions/workflows/2-jobs-by-city-sendgrid.yml)
+
+![Sample](/docs/repo-title.png)
+
 Jobs By City LinkedIn Reports automation using [Github Actions](https://github.com/features/actions) and [Ritchie CLI](https://ritchiecli.io).
 
 ## 📝 Description
@@ -11,6 +17,12 @@ This automation uses this [Ritchie CLI formula](https://github.com/GuillaumeFalo
 Reports will look like this one:
 
 ![Sample](/docs/report-sample.png)
+
+## Expected Behaviour
+
+If you run the workflow too frequently, you might get a `Http Status 429` error for too many requests attempts.
+
+*Suggestion: Wait for 1h when this occur to try again.*
 
 ## ♻️ Want to automate your login as well?
 
@@ -24,7 +36,7 @@ Then, you have 2 options:
 
 ### Option 1 - Without email notification
 
-- On the file [(1-jobs-by-city.yml)](todo), add 2 environment variables:
+- On the file [(1-jobs-by-city.yml)]([todo](https://github.com/GuillaumeFalourd/jobs-by-city-linkedin-reports/blob/main/.github/workflows/1-jobs-by-city.yml)), add 2 environment variables:
   - `RIT_JOB_TITLE` with the JOB TITLE you're looking for.
   - `RIT_JOB_CITY` with the JOB CITY you're interested in.
 
@@ -34,7 +46,7 @@ In that case, you'll only see new reports generated on the repository `/reports`
 
 You'll need to use **[SendGrid](https://sendgrid.com/)** (it's **FREE** until 100 emails sent / day).
 
-- As for the option 1: on the file [(1-jobs-by-city.yml)](todo), add 2 environment variables:
+- As for the option 1: on the file [(2-jobs-by-city-sengdrid.yml)]([todo](https://github.com/GuillaumeFalourd/jobs-by-city-linkedin-reports/blob/main/.github/workflows/2-jobs-by-city-sendgrid.yml)), add 2 environment variables:
   - `RIT_JOB_TITLE` with the JOB TITLE you're looking for.
   - `RIT_JOB_CITY` with the JOB CITY you're interested in.
 
@@ -53,4 +65,4 @@ In that case, you'll not only see new reports generated on the repository `/repo
 
 ## 🔁 Workflow Demo
 
-TODO
+*TODO*
