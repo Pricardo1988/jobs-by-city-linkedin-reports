@@ -26,7 +26,7 @@ jobs:
       - name: Ritchie Formula Jobs (Python) Execution
         env:
             RIT_JOB_TITLE: "Java Developer"
-            RIT_JOB_CITY: "Uberlandia"
+            RIT_JOB_CITY: "Sao Paulo"
             RIT_EMAIL_RECEIVER: ${{ secrets.RIT_EMAIL_RECEIVER }}
             RIT_SENDGRID_API_KEY: ${{ secrets.RIT_SENDGRID_API_KEY }}
             RIT_SENDGRID_EMAIL_SENDER: ${{ secrets.RIT_SENDGRID_EMAIL_SENDER }}  
