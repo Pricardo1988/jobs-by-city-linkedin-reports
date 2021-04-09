@@ -12,13 +12,13 @@ Jobs By City LinkedIn Reports automation using [Github Actions](https://github.c
 
 This automation uses this [Ritchie CLI formula](https://github.com/GuillaumeFalourd/formulas-insights/tree/master/linkedin/search/jobs) to scrape public LinkedIn pages to find jobs by city and to generate a CSV report with all relevant jobs datas.
 
-## Sample of generated reports
+## 🕵️ Sample of generated reports
 
 Reports will look like this one:
 
 ![Sample](/docs/report-sample.png)
 
-## Expected Behaviour
+## 🧐 Expected Behaviour
 
 If you run the workflow too frequently, you might get a `Http Status 429` error for too many requests attempts.
 
@@ -34,7 +34,7 @@ git clone https://github.com/GuillaumeFalourd/linkedin-jobs-by-city-reports-auto
 
 Then, you have 2 options:
 
-### Option 1 - Without email notification
+### Option 1: Without email notification
 
 - On the file [(1-jobs-by-city.yml)]([todo](https://github.com/GuillaumeFalourd/jobs-by-city-linkedin-reports/blob/main/.github/workflows/1-jobs-by-city.yml)), add 2 environment variables:
   - `RIT_JOB_TITLE` with the JOB TITLE you're looking for.
@@ -42,7 +42,7 @@ Then, you have 2 options:
 
 In that case, you'll only see new reports generated on the repository `/reports` directory.
 
-### Option 2 - With email notification
+### Option 2: With email notification
 
 You'll need to use **[SendGrid](https://sendgrid.com/)** (it's **FREE** until 100 emails sent / day).
 
