@@ -25,7 +25,7 @@ jobs:
 
       - name: Ritchie Formula Jobs (Python) Execution
         env:
-            RIT_JOB_TITLE: "Software Developer"
+            RIT_JOB_TITLE: "Java Developer"
             RIT_JOB_CITY: "Uberlandia"
         run: |
             cd $GITHUB_WORKSPACE/reports
