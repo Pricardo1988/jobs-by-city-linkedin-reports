@@ -61,8 +61,9 @@ In that case, you'll not only see new reports generated on the repository `/repo
 
 ## 🔐 Secrets
 
-![Sample](/docs/repo-secrets.png)
+![Secrets](/docs/repo-secrets.png)
 
 ## 🔁 Workflow Demo
 
-*TODO*
+![Demo](https://user-images.githubusercontent.com/22433243/114235444-9589b800-9956-11eb-8278-62f710db164f.png)
+
