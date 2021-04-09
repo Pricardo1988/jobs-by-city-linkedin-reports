@@ -2,7 +2,6 @@
 
 Jobs By City LinkedIn Reports automation using [Github Actions](https://github.com/features/actions) and [Ritchie CLI](https://ritchiecli.io).
 
-
 ## 📝 Description
 
 This automation uses this [Ritchie CLI formula](https://github.com/GuillaumeFalourd/formulas-insights/tree/master/linkedin/search/jobs) to scrape public LinkedIn pages to find jobs by city and to generate a CSV report with all relevant jobs datas.
@@ -50,8 +49,7 @@ In that case, you'll not only see new reports generated on the repository `/repo
 
 ## 🔐 Secrets
 
-TODO
-
+![Sample](/docs/repo-secrets.png)
 
 ## 🔁 Workflow Demo
 
