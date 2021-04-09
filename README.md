@@ -6,7 +6,7 @@
 
 ![Sample](/docs/repo-title.png)
 
-Jobs By City LinkedIn Reports automation using [Github Actions](https://github.com/features/actions) and [Ritchie CLI](https://ritchiecli.io).
+This reports contains an automation to get `jobs by city LinkedIn reports` using [Github Actions](https://github.com/features/actions) and [Ritchie CLI](https://ritchiecli.io) 💡
 
 ## 📝 Description
 
