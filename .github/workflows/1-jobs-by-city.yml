@@ -26,7 +26,7 @@ jobs:
       - name: Ritchie Formula Jobs (Python) Execution
         env:
             RIT_JOB_CITY: Sao Paulo
-            RIT_JOB_TITLE: Java Developer        
+            RIT_JOB_TITLE: Kotlin Developer        
         run: |
             cd $GITHUB_WORKSPACE/reports
             sudo rit add repo --provider="Github" --name="formulas-insights" --repoUrl="https://github.com/GuillaumeFalourd/formulas-insights" --priority=1
