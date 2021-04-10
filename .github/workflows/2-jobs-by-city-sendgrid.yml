@@ -5,6 +5,10 @@ on:
 #    - cron: "0 6 * * *"
   workflow_dispatch:
 
+env:
+  RIT_SENDGRID_API_KEY: ${{ secrets.RIT_SENDGRID_API_KEY }}
+  RIT_SENDGRID_EMAIL_SENDER: ${{ secrets.RIT_SENDGRID_EMAIL_SENDER }}  
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,8 +32,6 @@ jobs:
             RIT_JOB_TITLE: "Java Developer"
             RIT_JOB_CITY: "Sao Paulo"
             RIT_EMAIL_RECEIVER: ${{ secrets.RIT_EMAIL_RECEIVER }}
-            RIT_SENDGRID_API_KEY: ${{ secrets.RIT_SENDGRID_API_KEY }}
-            RIT_SENDGRID_EMAIL_SENDER: ${{ secrets.RIT_SENDGRID_EMAIL_SENDER }}  
         run: |
             cd $GITHUB_WORKSPACE/reports
             sudo rit add repo --provider="Github" --name="formulas-insights" --repoUrl="https://github.com/GuillaumeFalourd/formulas-insights" --priority=1
