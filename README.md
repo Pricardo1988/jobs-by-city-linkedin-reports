@@ -8,23 +8,23 @@
 
 This reports contains an automation to get `jobs by city LinkedIn reports` using [Github Actions](https://github.com/features/actions) and [Ritchie CLI](https://ritchiecli.io).
 
-## 📝 Description
+## 📝  Description
 
 This automation uses this [Ritchie CLI formula](https://github.com/GuillaumeFalourd/formulas-insights/tree/master/linkedin/search/jobs) to scrape public LinkedIn pages to find jobs by city and to generate a CSV report with all relevant jobs datas.
 
-## 🕵️ Sample of generated reports
+## 🕵️  Sample of generated reports
 
 Reports will look like this one:
 
 ![Sample](/docs/report-sample.png)
 
-## 🧐 Expected Behaviour
+## 🧐  Expected Behaviour
 
 If you run the workflow too frequently, you might get a `Http Status 429` error for too many requests attempts.
 
 *Suggestion: Wait for 1h when this occur to try again.*
 
-## ♻️ Want to automate your login as well?
+## ♻️  Want to automate your login as well?
 
 **Create a new repository** (you can clone or fork this one)
 
@@ -34,7 +34,7 @@ git clone https://github.com/GuillaumeFalourd/linkedin-jobs-by-city-reports-auto
 
 Then, you have 2 options:
 
-### 1️⃣ Without email notification
+  ### 1️⃣  Without email notification
 
 - On the file [(1-jobs-by-city.yml)]([todo](https://github.com/GuillaumeFalourd/jobs-by-city-linkedin-reports/blob/main/.github/workflows/1-jobs-by-city.yml)), add 2 environment variables:
   - `RIT_JOB_TITLE` with the JOB TITLE you're looking for.
@@ -42,7 +42,7 @@ Then, you have 2 options:
 
 In that case, you'll only see new reports generated on the repository `/reports` directory.
 
-### 2️⃣ With email notification
+  ### 2️⃣  With email notification
 
 You'll need to use **[SendGrid](https://sendgrid.com/)** (it's **FREE** until 100 emails sent / day).
 
@@ -59,11 +59,11 @@ In that case, you'll not only see new reports generated on the repository `/repo
 
 *Note: [You can also use Ritchie CLI to add new secrets to your repository](https://github.com/GuillaumeFalourd/formulas-github/tree/master/github/add/secret)*
 
-## 🔐 Secrets
+## 🔐  Secrets
 
 ![Secrets](/docs/repo-secrets.png)
 
-## 🔁 Workflow Demo
+## 🔁  Workflow Demo
 
 ![Demo](https://user-images.githubusercontent.com/22433243/114235444-9589b800-9956-11eb-8278-62f710db164f.png)
 
