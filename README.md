@@ -34,7 +34,7 @@ git clone https://github.com/GuillaumeFalourd/linkedin-jobs-by-city-reports-auto
 
 Then, you have 2 options:
 
-### Option 1: Without email notification
+### 1️⃣ Without email notification
 
 - On the file [(1-jobs-by-city.yml)]([todo](https://github.com/GuillaumeFalourd/jobs-by-city-linkedin-reports/blob/main/.github/workflows/1-jobs-by-city.yml)), add 2 environment variables:
   - `RIT_JOB_TITLE` with the JOB TITLE you're looking for.
@@ -42,7 +42,7 @@ Then, you have 2 options:
 
 In that case, you'll only see new reports generated on the repository `/reports` directory.
 
-### Option 2: With email notification
+### 2️⃣ With email notification
 
 You'll need to use **[SendGrid](https://sendgrid.com/)** (it's **FREE** until 100 emails sent / day).
 
