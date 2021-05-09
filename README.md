@@ -24,7 +24,7 @@ If you run the workflow too frequently, you might get a `Http Status 429` error 
 
 *Suggestion: Wait for 1h when this occur to try again.*
 
-## ♻️  Want to automate your login as well?
+## ♻️  Want to automate this report as well?
 
 **Create a new repository** (you can clone or fork this one)
 
